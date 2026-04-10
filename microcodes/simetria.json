@@ -1,0 +1,35 @@
+
+{
+    "initial_state": "q_impar",
+    "blank_symbol": "_",
+    "halt_states": [
+        "halt"
+    ],
+    "transitions": {
+        "q_impar": {
+            "1": {
+                "next_state": "q_par",
+                "write": "i",
+                "move": "R"
+            },
+            "_": {
+                "next_state": "halt",
+                "write": "p",
+                "move": "N"
+            }
+       
+    },
+     "q_par": {
+            "1": {
+                "next_state": "q_impar",
+                "write": "p",
+                "move": "R"
+            },
+            "_": {
+                "next_state": "halt",
+                "write": "i",
+                "move": "N"
+            }
+        }
+}
+}

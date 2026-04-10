@@ -1,0 +1,19 @@
+{
+    "initial_state": "q0",
+    "blank_symbol": "_",
+    "halt_states": [
+        "halt"
+    ],
+    "transitions": {
+        "q0": {
+            "1": {
+                "next_state": "q0",
+                "write": "_",
+                "move": "R"
+            },
+            "_": {
+                "next_state": "halt",
+                "write": "_",
+                "move": "N"
+        }
+}}}
